@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Nostromo Videoteca</title>
+    <title>Belica</title>
     <link href="/css/pers.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
 
@@ -32,23 +32,38 @@
 
 
 
-          <div id="home">
-  <h1>Nostromo Videoteca</h1>
+          <h1>Belica</h1>
 
+<h3>sadfsadfsdfsdfsd</h3>
 
-<h3>Categorias</h3>
-  <ul class="list-inline posts">
-    
-  <li><a href="/cat/scifi.html">Ciencia Ficcion</a></li>
-    
-  <li><a href="/cat/belica.html">Belica</a></li>
-    
-  </ul>
+<p><ul class="list-inline posts"></p>
+
+<p></ul></p>
 
 
 
+<script>
+$('video').mediaelementplayer({
+startLanguage: 'es',
 
-</div>
+
+features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+        success: function(media, node, player) {
+                var events = ['loadstart', 'play','pause', 'ended'];
+
+                for (var i=0, il=events.length; i<il; i++) {
+
+                        var eventName = events[i];
+
+                        media.addEventListener(events[i], function(e) {
+                                $('#output').append( $('<div>' + e.type + '</div>') );
+                        });
+
+                }
+        }
+});
+</script>
+
 
 
 
