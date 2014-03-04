@@ -21,6 +21,9 @@ videojuegos correspondientes a su historia.
     <source src="/media/scifi/aliens/aliens.mp4" type="video/mp4" title="mp4">
 
     <track kind="subtitles" src="/media/scifi/aliens/aliens.srt" srclang="es" />
+    <poster source=""/media/scifi/aliens/aliens.jpg"
+
+
 </video>
 
 </div>
