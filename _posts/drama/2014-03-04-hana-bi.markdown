@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Hana bi"
+date: 2014-03-04
+categories: drama kitano
+---
+
+
+Sinopsis: Hana Bi (花-火; fuegos artificiales; literalmente: flor-fuego) es un film de 1997 protagonizado, escrito, dirigido y editado por el cineasta japonés Takeshi Kitano.
+
+<div class="text-center">
+
+<video class="center" id="player1" width="854" height="480">
+
+    <source src="/media/drama/hana-bi/hana-bi.mp4" type="video/mp4" title="mp4">
+
+    <track kind="subtitles" src="/media/drama/hana-bi/hana-bi.srt" srclang="es" />
+</video>
+
+</div>
