@@ -1,0 +1,26 @@
+---
+
+layout: post
+
+title: "Alien (1979)"
+
+date: 2014-03-04
+
+categories: scifi
+
+---
+
+Sinopsis: Alien: el octavo pasajero (Alien) es una película estadounidense de ciencia ficción y terror dirigida por Ridley Scott y estrenada en 1979. Contó con los actores Sigourney 
+Weaver, Tom Skerritt, Veronica Cartwright, Harry Dean Stanton, John Hurt, Ian Holm y Yaphet Kotto. El título de la película hace referencia al antagonista: una agresiva criatura 
+alienígena que acecha a la tripulación de una nave espacial.
+
+<div class="text-center">
+
+<video class="center" id="player1" width="854" height="480">
+
+    <source src="/media/scifi/alien/alien.mp4" type="video/mp4" title="mp4">
+
+    <track kind="subtitles" src="/media/scifi/alien/alien.srt" srclang="es" />
+</video>
+
+</div>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Ciencia Ficcion</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/pers.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+
+
+
+    <!-- Videoelement JS -->
+    <script src="/build/jquery.js"></script>
+    <script src="/build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="/build/mediaelementplayer.min.css" />
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body>
+
+ <div class="container">
+<div class="text-center"><img src="/img/nostromo.jpg"></div>
+
+
+
+          <h1 class="green start">Ciencia Ficcion</h1>
+
+<ul class="list-unstyled">
+
+
+
+<li><a href="/scifi/2014/03/04/aliens.html">Aliens (1986)</a>
+
+ <p>Sinopsis: Aliens, el regreso es una película dirigida por James Cameron que constituye la segunda entrega de la serie cinematográfica de ciencia ficción Alien. Si la primera película 
+creó el concepto de la feroz criatura asesina, la segunda le da forma al universo imaginario de Alien, en el cual se basan, para hacer más novelas e historietas, así como los 
+videojuegos correspondientes a su historia.</p>
+ </li>
+ 
+
+
+<li><a href="/scifi/2014/03/04/alien.html">Alien (1979)</a>
+
+ <p>Sinopsis: Alien: el octavo pasajero (Alien) es una película estadounidense de ciencia ficción y terror dirigida por Ridley Scott y estrenada en 1979. Contó con los actores Sigourney 
+Weaver, Tom Skerritt, Veronica Cartwright, Harry Dean Stanton, John Hurt, Ian Holm y Yaphet Kotto. El título de la película hace referencia al antagonista: una agresiva criatura 
+alienígena que acecha a la tripulación de una nave espacial.</p>
+ </li>
+ 
+
+
+</ul>
+
+
+
+<script>
+$('video').mediaelementplayer({
+startLanguage: 'es',
+
+
+features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+        success: function(media, node, player) {
+                var events = ['loadstart', 'play','pause', 'ended'];
+
+                for (var i=0, il=events.length; i<il; i++) {
+
+                        var eventName = events[i];
+
+                        media.addEventListener(events[i], function(e) {
+                                $('#output').append( $('<div>' + e.type + '</div>') );
+                        });
+
+                }
+        }
+});
+</script>
+
+
+
+
+
+</div> <!-- container -->
+    </body>
+</html>
