@@ -4,13 +4,14 @@ title: Nostromo Videoteca
 ---
 
 <div id="home">
-  <h1 class="green start">Nostromo Videoteca</h1>
+  <h3 class="green start">Nostromo Videoteca</h3>
 
-
-<h3 class="start">Categorias</h3>
+<br />
+<h4 class="purple start">Categorias</h4>
+<br />
   <ul class="start list-inline posts">
     {% for post in site.categories.cat %}
-  <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></li>
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
