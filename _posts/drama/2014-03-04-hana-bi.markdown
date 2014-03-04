@@ -10,7 +10,7 @@ Sinopsis: Hana Bi (花-火; fuegos artificiales; literalmente: flor-fuego) es un
 
 <div class="text-center">
 
-<video class="center" id="player1" width="854" height="480">
+<video class="center" id="player1" width="854" height="480" poster="/media/drama/hana-bi/hana-bi.jpg">
 
     <source src="/media/drama/hana-bi/hana-bi.mp4" type="video/mp4" title="mp4">
 
