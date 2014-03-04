@@ -20,7 +20,7 @@ alienígena que acecha a la tripulación de una nave espacial.
 
     <source src="/media/scifi/alien/alien.mp4" type="video/mp4" title="mp4">
     <track kind="subtitles" src="/media/scifi/alien/alien.srt" srclang="es" />
-    <poster source="/media/scifi/alien/alien.jpg"
+    <poster src="/media/scifi/alien/alien.jpg"
 </video>
 
 </div>
