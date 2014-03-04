@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Nostromo Videoteca</title>
+    <title>Boiling Point (1990)</title>
     <link href="/css/pers.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
 
@@ -32,25 +32,40 @@
 
 
 
-          <div id="home">
-  <h1>Nostromo Videoteca</h1>
+          <h1>Boiling Point (1990)</h1>
+<p class="meta">Categorias: accion</p>
 
-
-<h3>Categorias</h3>
-  <ul class="list-inline posts">
-    
-  <li><a href="/cat/2014/03/03/scifi.html">Ciencia Ficcion</a></li>
-    
-  <li><a href="/cat/2014/03/03/belica.html">Belica</a></li>
-    
-  <li><a href="/cat/2014/03/03/accion.html">Accion</a></li>
-    
-  </ul>
-
-
-
-
+<div class="text-center">
+<video class="center" id="player1" width="854" height="480">
+        <source src="/sample/echo-hereweare.mp4" type="video/mp4" title="mp4">
+        <track kind="subtitles" src="/sample/mediaelement.srt" srclang="es" />
+</video>
 </div>
+
+
+
+<script>
+$('video').mediaelementplayer({
+startLanguage: 'es',
+
+
+features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+        success: function(media, node, player) {
+                var events = ['loadstart', 'play','pause', 'ended'];
+
+                for (var i=0, il=events.length; i<il; i++) {
+
+                        var eventName = events[i];
+
+                        media.addEventListener(events[i], function(e) {
+                                $('#output').append( $('<div>' + e.type + '</div>') );
+                        });
+
+                }
+        }
+});
+</script>
+
 
 
 
