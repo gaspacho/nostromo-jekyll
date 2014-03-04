@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Nostromo Videoteca</title>
+    <title>Drama</title>
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/pers.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
@@ -36,23 +36,46 @@
 
 
 
-          <div id="home">
-  <h1 class="green start">Nostromo Videoteca</h1>
+          <h1 class="green start">Drama</h1>
 
-
-<h3 class="start">Categorias</h3>
-  <ul class="start list-inline posts">
-    
-  <li><h2><a href="/cat/scifi.html">Ciencia Ficcion</a></h2></li>
-    
-  <li><h2><a href="/cat/drama.html">Drama</a></h2></li>
-    
-  </ul>
+<ul class="list-unstyled">
 
 
 
+<li><a href="/drama/kitano/hana-bi.html">Hana bi</a>
 
-</div>
+ Sinopsis: Hana Bi (花-火; fuegos artificiales; literalmente: flor-fuego) es un film de 1997 protagonizado, escrito, dirigido y editado por el cineasta japonés Takeshi Kitano.
+
+ </li>
+ 
+
+
+</ul>
+
+
+
+<script>
+$('video').mediaelementplayer({
+startLanguage: 'es',
+
+
+features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+        success: function(media, node, player) {
+                var events = ['loadstart', 'play','pause', 'ended'];
+
+                for (var i=0, il=events.length; i<il; i++) {
+
+                        var eventName = events[i];
+
+                        media.addEventListener(events[i], function(e) {
+                                $('#output').append( $('<div>' + e.type + '</div>') );
+                        });
+
+                }
+        }
+});
+</script>
+
 
 
 
